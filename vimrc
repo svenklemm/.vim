@@ -1,3 +1,7 @@
+" load plugins
+execute pathogen#infect()
+call pathogen#helptags()
+
 set nocompatible                        " don't behave like vi
 set backspace=2                         " allow backspacing over line breaks, autoinserts and start of insert
 set smartindent                             " enable automatic indention
@@ -23,24 +27,7 @@ set nofoldenable
 
 syntax on                               " enable syntax-highlighting
 
-" en/disable taglist-browser by pressing <F8>
-nmap <F8> :Tlist<CR>
-" execute make by pressing <F9>
-nmap <F9> :wall<CR>:make<CR>
-" show next error by pressing <F10>
-nmap <F10> :cn<CR>
-
-" spell checker
-map <F5> [s zz
-map <F6> ]s zz
-map <F7> z=
-map <F8> zg
-
 set spelllang=en
-
-let Tlist_Ctags_Cmd="/usr/bin/ctags"    " set program used for taglist-creation
-
-let g:miniBufExplMapCTabSwitchBuffs = 1 " switch buffers with <c-tab>
 
 function InsertTabWrapper(direction)    " automagically decide what to do with <tab>
   let col = col('.') -1                 " <s-tab> in insert mode
