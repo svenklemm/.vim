@@ -21,8 +21,6 @@ set foldmethod=indent
 set foldlevel=2
 set nofoldenable
 
-set dir=~/.vimswap//,/tmp//,.
-
 syntax on                               " enable syntax-highlighting
 
 " en/disable taglist-browser by pressing <F8>
@@ -61,7 +59,7 @@ endfunction
 inoremap <tab> <c-r>=InsertTabWrapper(1)<cr>
 inoremap <s-tab> <c-r>=InsertTabWrapper(-1)<cr>
 
-" colorscheme elflord
+colorscheme sven
 
 " automagically close ( [ { and "
 imap ( ()<Left>
