@@ -16,3 +16,6 @@
 [submodule "bundle/vim-systemd"]
 	path = bundle/vim-systemd
 	url = git://fedorapeople.org/home/fedora/wwoods/public_git/vim-scripts.git
+[submodule "bundle/typescript-vim"]
+	path = bundle/typescript-vim
+	url = https://github.com/leafgarland/typescript-vim.git
