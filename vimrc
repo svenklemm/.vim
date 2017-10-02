@@ -4,7 +4,7 @@ call pathogen#helptags()
 
 set nocompatible                        " don't behave like vi
 set backspace=2                         " allow backspacing over line breaks, autoinserts and start of insert
-set smartindent                             " enable automatic indention
+set smartindent                         " enable automatic indention
 set showmatch                           " show matching parens/brackets
 set comments=sl:/*,mb:**,elx:*/         " enable automagic multi-line comments
 set formatoptions=croq                  " automatic formating options
@@ -12,7 +12,6 @@ set softtabstop=0
 set shiftwidth=2                        " default character indentation level
 set expandtab                           " use spaces instead of tabs for indentation
 set tabstop=2
-set hlsearch                            " highligh last used search pattern
 set hidden
 set wildmenu 
 set wildmode=longest,full
@@ -20,6 +19,9 @@ set laststatus=2
 set statusline=[%02n]\ %F%(\ %r%y%m%)\ %=%c%V,\ %l/%L\ \ %P
 set ruler
 set number
+
+set hlsearch                            " highligh last used search pattern
+set ignorecase
 
 set foldmethod=indent
 set foldlevel=2
