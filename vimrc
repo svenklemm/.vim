@@ -56,6 +56,8 @@ imap [ []<Left>
 imap { {}<Left>
 imap " <C-V>"<C-V>"<Left>
 
+map <F5> :GoRun<CR>
+
 filetype plugin on
 
 runtime ftplugin/man.vim
