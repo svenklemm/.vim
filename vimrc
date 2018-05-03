@@ -65,3 +65,5 @@ runtime ftplugin/man.vim
 autocmd BufRead,BufNewFile *.nse set filetyper=lua
 autocmd BufRead,BufNewFile *.rxml set filetype=ruby
 
+let g:jsonnet_fmt_options = '-n 4 --string-style d'
+
