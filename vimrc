@@ -48,7 +48,9 @@ endfunction
 inoremap <tab> <c-r>=InsertTabWrapper(1)<cr>
 inoremap <s-tab> <c-r>=InsertTabWrapper(-1)<cr>
 
+autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 colorscheme sven
+match ExtraWhitespace /\s\+$/
 
 " automagically close ( [ { and "
 imap ( ()<Left>
