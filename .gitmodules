@@ -34,3 +34,6 @@
 [submodule "bundle/vim-jsonnet"]
 	path = bundle/vim-jsonnet
 	url = https://github.com/google/vim-jsonnet
+[submodule "bundle/YouCompleteMe"]
+	path = bundle/YouCompleteMe
+	url = https://github.com/ycm-core/YouCompleteMe
